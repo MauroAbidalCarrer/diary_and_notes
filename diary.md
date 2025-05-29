@@ -771,3 +771,35 @@
 
 27/05/2025:
 -   Now I will try to use first the [spline cam code](https://github.com/AhmedImtiazPrio/splinecam) and then the [local complexity code](https://github.com/AhmedImtiazPrio/grok-adversarial/).  
+    Turns out that spline cam does not work for skip connections nor batch norm layers so this is a bummer...  
+    In the paper they show that they used a grid of local complexity measures to aproximate the results of spline cam.  
+    I might use that instead.  
+
+28/05/2025:
+-   It took me a while to get the `train_resnet18_cifar10.py` demo github code of the paper working.  
+    First because of the conda env (as always...) and then because it simply took ~2.5 hours to run the experiment on a V100.  
+    But it did work eventually.  
+    The thing is that the model only gets 70% test accuracy.  
+    This is disappointing because:
+    - wouldn't really call that "delayed generalization", maybe just "delayed 70%".  
+    - the resnet from the kaggle notebook achieves 90% accuracy in 2 mins...  
+    - the paper states that batch norm prevents Grokking for happening.  
+    - The paper is called "grokking always happens and here is why"... but not when batch norm are used but batch norm layers are almost always used.
+    
+
+29/05/2025:
+-   I took another look at the demo code and it turns out that while the test accuracy stagneted at 70%, the adversirial test accuracy reached 70% just at the end of training.  
+    It looked like it could have kept going up (judging only by the adversarial test accuracy over iterations curve).  
+    So now I am starting to wander if I actually made the trainging last longer...  
+    I guess I should also see if the "kaggle resnet" can get a similar score on adversarial test samples.  
+-   I also think I should look into some videos/blogs/papers on adversarial attacks, I saw links on them in the superposition blog of Olah/Anthropic.  
+-   I read a [reddit post](https://www.reddit.com/r/MachineLearning/comments/1defvmv/d_is_grokking_solved/) and its comment section.  
+    In it, a scientist (if he is not lying saying that he presented a paper at ICLR) [said that grokking over hyped](https://www.reddit.com/r/MachineLearning/comments/1defvmv/comment/l8d45rs/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).  
+    It's just a delayed generalization which will always be worse than a "normal" quicker generalization.  
+    It says that grokking does not always happen only in accademic/edge cases which contracdicts what the paper says...  
+    He also says that grokking can be induced or ablated using a single output scaling hyperparameter.  
+    So I guess i could verify that?..
+-   I think my next steps are going to be:
+    1.  Learn a bit more about adversarial robustness.
+    1.  See if the "kaggle notebook" performs well against adversarial samples.  
+    1.  Monitor local complexity on it.
