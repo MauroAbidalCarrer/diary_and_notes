@@ -800,6 +800,14 @@
     He also says that grokking can be induced or ablated using a single output scaling hyperparameter.  
     So I guess i could verify that?..
 -   I think my next steps are going to be:
-    1.  Learn a bit more about adversarial robustness.
+    1.  Learn a bit more about adversarial robustness.  
     1.  See if the "kaggle notebook" performs well against adversarial samples.  
     1.  Monitor local complexity on it.
+-   I read about Fast Gradient Sign Method (FGSM), it's such an elegant way of finding the best attack.  
+    Before reading about it I thought it would consist in finding the closest descision boundry but no.   
+    The adverserial training however is a bit less elegant. I found it representative of the "empirical state" that the deep learning field is in.  
+    (Let me get down of my high horses ... thanks, let's continue)
+-   I found this [kaggle notebook] (https://www.kaggle.com/code/seasonxc/fgsm-pgd-and-adversarial-training-cifar-10#What-is-FGSM?).
+    It gives an overview of what PGD is, how to incorporate attacks in training.  
+-   Looking at the attacks, I start to understand why the paper code resnet had such a low accuracy. 
+-   Tomorrow I will try to implement the FGSM and PGD attacks.  
