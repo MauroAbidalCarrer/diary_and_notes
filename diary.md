@@ -790,13 +790,13 @@
 29/05/2025:
 -   I took another look at the demo code and it turns out that while the test accuracy stagneted at 70%, the adversirial test accuracy reached 70% just at the end of training.  
     It looked like it could have kept going up (judging only by the adversarial test accuracy over iterations curve).  
-    So now I am starting to wander if I actually made the trainging last longer...  
+    So now I am starting to wander if I actually should make the trainging last longer...  
     I guess I should also see if the "kaggle resnet" can get a similar score on adversarial test samples.  
 -   I also think I should look into some videos/blogs/papers on adversarial attacks, I saw links on them in the superposition blog of Olah/Anthropic.  
 -   I read a [reddit post](https://www.reddit.com/r/MachineLearning/comments/1defvmv/d_is_grokking_solved/) and its comment section.  
-    In it, a scientist (if he is not lying saying that he presented a paper at ICLR) [said that grokking over hyped](https://www.reddit.com/r/MachineLearning/comments/1defvmv/comment/l8d45rs/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).  
+    In it, a scientist (if he is not lying saying that he presented a paper at ICLR) [said that grokking is over hyped](https://www.reddit.com/r/MachineLearning/comments/1defvmv/comment/l8d45rs/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).  
     It's just a delayed generalization which will always be worse than a "normal" quicker generalization.  
-    It says that grokking does not always happen only in accademic/edge cases which contracdicts what the paper says...  
+    It says that grokking mostly happens in accademic/edge cases which contracdicts what the paper says(tho the comment was posted later)...  
     He also says that grokking can be induced or ablated using a single output scaling hyperparameter.  
     So I guess i could verify that?..
 -   I think my next steps are going to be:
@@ -804,10 +804,37 @@
     1.  See if the "kaggle notebook" performs well against adversarial samples.  
     1.  Monitor local complexity on it.
 -   I read about Fast Gradient Sign Method (FGSM), it's such an elegant way of finding the best attack.  
-    Before reading about it I thought it would consist in finding the closest descision boundry but no.   
+    Before reading about it I thought it would consist in searching the closest descision boundry but no.   
     The adverserial training however is a bit less elegant. I found it representative of the "empirical state" that the deep learning field is in.  
     (Let me get down of my high horses ... thanks, let's continue)
 -   I found this [kaggle notebook] (https://www.kaggle.com/code/seasonxc/fgsm-pgd-and-adversarial-training-cifar-10#What-is-FGSM?).
     It gives an overview of what PGD is, how to incorporate attacks in training.  
 -   Looking at the attacks, I start to understand why the paper code resnet had such a low accuracy. 
--   Tomorrow I will try to implement the FGSM and PGD attacks.  
+-   Tomorrow I will try to implement the FGSM and PGD attacks.
+
+30/05/2025:
+-   Found this [nice PDF](https://files.sri.inf.ethz.ch/website/teaching/riai2020/materials/lectures/LECTURE3_ATTACKS.pdf) on PGD to understand it a little better than the simple overview given in the adversarial training kaggle notebook.
+-   Wrote the first version of PGD.
+
+02/05/2025:
+-   Did a little bit of refacto to test the adversarial attacks in another notebook than the one I use to train the model.
+-   Created the first adversarial attacks in a new notebook, seems to work pretty well.  
+    I used the same PGD params as the ones in the "NNs always grok" code.
+    Then I tested the accuracy to the model from 1 to 10 iterations.
+    The model fails at 5 iterations.
+-   I tried to add the PGD attacks into the training but I get a `RuntimeError: Tensor 0 has no grad_fn` error...
+    I'll try to make work tomorrow.  
+
+03/05/2025:
+-   Turns out I had this error because the `record_metrics` of Trainer class had the `torch.no_grad` call as a decorator.    
+    I wish the error was something like "can't call Tensor.bacward because no_grad is active" but that's okay...  
+    I simply to call it as a context manager only for the forward call of the model and that fixed it.  
+-   Without any change to the other hyperparameters I get 55% on the adversarial attacks on the test set and now the training takes ~15 mins.  
+    Granted this is less than the "NNs always gok" code but I haven't changed any hyper parameter AND it takes ~15 mins which is a lot faster.  
+    By simply increasing the number of epochs from 8 to 24 I get a 66% and the training now takes.  
+-   I would need to update the max learning rate. To do so I would need to implement an learning rate finder as described in a blog I read a while ago.  
+-   Before tho I would need to speed up the generation of attacks because it's taking way too much time.  
+-   I asked uncleGPT what are the most commonly used adversarial attacks and one of them caught my attention: free Adversarial Training (freeAT for short).  
+    I read its paper abstract and it seems very elegant, and efficient.  
+    I will definitely try to implement this tomorrow.  
+-   The paper mentioned Wide Residual Net (WRN for short) I took a look at a video about it not sure I will use that tho.  
