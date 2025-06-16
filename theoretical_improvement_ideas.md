@@ -1,0 +1,5 @@
+- Use Local complexity as loss.  
+- Use Local complexity as input for a scheduler.  
+- Use adv attacks as probes to compute local complexity.  
+- Link adv attacks, local complexity and loss sharpness.  
+- Use loss (first and/or 2nd order)gradients amplitude as a regularization loss.  
