@@ -816,7 +816,7 @@
 -   Found this [nice PDF](https://files.sri.inf.ethz.ch/website/teaching/riai2020/materials/lectures/LECTURE3_ATTACKS.pdf) on PGD to understand it a little better than the simple overview given in the adversarial training kaggle notebook.
 -   Wrote the first version of PGD.
 
-02/05/2025:
+02/06/2025:
 -   Did a little bit of refacto to test the adversarial attacks in another notebook than the one I use to train the model.
 -   Created the first adversarial attacks in a new notebook, seems to work pretty well.  
     I used the same PGD params as the ones in the "NNs always grok" code.
@@ -825,7 +825,7 @@
 -   I tried to add the PGD attacks into the training but I get a `RuntimeError: Tensor 0 has no grad_fn` error...
     I'll try to make work tomorrow.  
 
-03/05/2025:
+03/06/2025:
 -   Turns out I had this error because the `record_metrics` of Trainer class had the `torch.no_grad` call as a decorator.    
     I wish the error was something like "can't call Tensor.bacward because no_grad is active" but that's okay...  
     I simply to call it as a context manager only for the forward call of the model and that fixed it.  
@@ -837,4 +837,42 @@
 -   I asked uncleGPT what are the most commonly used adversarial attacks and one of them caught my attention: free Adversarial Training (freeAT for short).  
     I read its paper abstract and it seems very elegant, and efficient.  
     I will definitely try to implement this tomorrow.  
--   The paper mentioned Wide Residual Net (WRN for short) I took a look at a video about it not sure I will use that tho.  
+-   The paper mentioned Wide Residual Net (WRN for short) I took a look at a video about it not sure I will use that tho.
+
+04/06/2025:
+-   Worked on the video editing/creation app for Dominique.
+
+10/06/2025 -> 12/06/2025:
+-   Worked on the video editing/creation app for Dominique.
+-   Finished(?) the app!
+-   It took me more time than expected but this will be a nice addition to my portfolio/resume/CV.
+
+13/06/2025:
+-   Familiarized myself with the very basics of LeRobot datasets and overall LeRobot library(I'm doing a LeRobot hackthon this weekend).
+
+14/06/2025 - 15/06/2025:
+-   Participated to a LeRobot hackathon that was createad to popularize the new [so101 robotic arm](https://youtu.be/vC7E6ZmXBT8?si=_AvzT4KkwfuXpAll).  
+-   I teamed up with Safwan Ahmad (awesome guy).  
+    He already had two setup/working (robotic) arms, one leader and one follower.  
+-   I already had a Vast workflow set up so we naturally split the work in half:  
+    -   I would take care of model training.  
+    -   He would handle all the code closely related to the robotic arms: recording our datasets and running the model on the arms.  
+-   Our goal for the hackathon was to first train a model that would sort small ~0.5cm cubes to set up a pipeline to then implement more complex tasks.  
+    Turns out that sorting these cubes was actually a very diffcult task.  
+	The main issue is that the cubes were very small and the robotic claw is also pretty small.
+	Watching at the wrist camera feedback we realized that it was actually pretty difficult (even for us) to see if the cube was or wasn't in the right position to grab the cube.  
+	Also we realized that most of the models that we trained were actually overfitted.  
+	We realized it late because didn't make a test/train split (whivh is a bad idea I know) because we had recorded a fairly small dataset and because there were "test" argument in the provided script to train the model.  
+	Maybe we just had to do some manipulation of the hugging face dataset instead of providing some train-test-split argument to the training script.
+	What happend is that we tested a [model checkpoint that we thaught was underfitted](https://huggingface.co/Mauro-Abidal-Carrer/4k_steps_smovla_new_dataset)(4k training steps) while the training was finishing.  
+	And only when we tested the last [checkpoint of the model](https://huggingface.co/Mauro-Abidal-Carrer/15k_steps_smolVLA_new_dataset)(15k training steps) did we realize that 15k steps was too much.
+	The aforementioned model was a finetuned smolVLA model.
+	We also tried to train an act model but it didn't work.
+-	We had two datasets:
+	1. A [dataset](https://huggingface.co/datasets/SafwanAhmad/smol_test_safwan_odd_one_out) where the claw was held vertically while grabbing the cube.  
+ 	2. A [dataset](https://huggingface.co/datasets/SafwanAhmad/smol_test_safwan_odd_one_out_camTop) where the claw was held horizontally while grabbing the cube.  
+  	3. Safwan also recorded a dataset but the recording conditions were not good enough it seems + I had trained an act model isntead of a smolVLA model.    
+-	Overall the best performing model was a 4k training step model trained on the second dataset.  
+-	We wanted to try to add a second wrist camera on the other side of the claw we thought that it would enable the model to clearly see if the object was in between the claws.  
+	Unfortunatly we ran out of time before we could try that.
+	That's mostly my fault tbh I should have arrived earlier...
