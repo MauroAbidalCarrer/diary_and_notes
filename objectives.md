@@ -1,4 +1,4 @@
-###theoretical/fundamentals concepts: 20th of May to 1st of June and 11th of June to 20th of June (~20 days)
+### theoretical/fundamentals concepts: 20th of May to 1st of June and 11th of June to 20th of June (~20 days)
 *Learn pytorch, the theory and hopefully work on top on a recent paper and make a new one(maybe just a blog?).*
 Goals:
     - Be able to train a (SOTA?) model on a common task (CV, NLP, whatever).
@@ -23,7 +23,7 @@ Tasks:
 - Read spline theory ?
 - Read spline cam ?
 
-###Practical work: 20th of June to 20th Jully (30 days)
+### Practical work: 20th of June to 20th Jully (30 days)
 *Do some work on a practical task*
 - (kaggle?)
     - Use transfer learning
