@@ -1,5 +1,5 @@
 ### 20th of May to 1st of June and 11th of June to 20th of June (~20 days)
-*Learn pytorch, the theory and hopefully reimplement a paper.*
+*Learn pytorch, the theory and hopefully work on top on a recent paper and make a new one(maybe just a blog?).*
 - image classifier (5 days)
     - read VGG + resnet papers (done)
     - read resnet paper (done)
