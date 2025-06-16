@@ -876,3 +876,9 @@
 -	We wanted to try to add a second wrist camera on the other side of the claw we thought that it would enable the model to clearly see if the object was in between the claws.  
 	Unfortunatly we ran out of time before we could try that.
 	That's mostly my fault tbh I should have arrived earlier...
+-	I looked on the internet for cosine annealing+warm up(which one of the most popular lr policy for large models) but I din't find any usefull insights.  
+-	I restarted watching the TuneAdorable video on warmup.  
+	It goes over a part of the paper that says that some model will naturally decrease the learning rate sharpness as they also increase their loss over training steps.  
+	While some other models tend to have increase in lost sharpness over training steps.  
+	This reminded me of the double descent of local complexity for some model and single ascent+descent for other models in the NN always grok paper.  
+	I wander if there is a link between the two.  
