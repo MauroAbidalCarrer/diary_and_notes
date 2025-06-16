@@ -8,8 +8,9 @@
     - imagenet?
 - Reimplement interpretation paper on the classifier (splineCam, activation atlas/feature visualization, ...) (15 days)
     - Read Neural nets always grokk and here is why (done)
-    - read blog/paper/watch video on adversirial attacks
+    - read blog/paper/watch video on adversirial attacks(done, kind of...)
     - (re)Read building block of interpretability blog ?
+    - Use adv attacks as better local complexity ?
     - Read circuit theory ?
     - Read spline cam ?
     - Read spline theory ?
