@@ -1,4 +1,5 @@
 ### 20th of May to 1st of June and 11th of June to 20th of June (~20 days)
+*Learn pytorch, the theory and hopefully reimplement a paper.*
 - image classifier (5 days)
     - read VGG + resnet papers (done)
     - read resnet paper (done)
@@ -14,13 +15,12 @@
     - Read circuit theory ?
     - Read spline cam ?
     - Read spline theory ?
+
 ### 20th of June to 20th Jully (30 days)
-- recreate 
+*Do some work on a practical task*
 - (kaggle?)
     - Use transfer learning
-### 
 - Reinforcement learning
-    - connect 4
-    - chess
-    - sc2
-    - huggin face's lerobot
+    - chess?
+    - sc2?
+    - huggin face's lerobot?
