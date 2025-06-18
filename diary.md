@@ -875,10 +875,41 @@
 -	Overall the best performing model was a 4k training step model trained on the second dataset.  
 -	We wanted to try to add a second wrist camera on the other side of the claw we thought that it would enable the model to clearly see if the object was in between the claws.  
 	Unfortunatly we ran out of time before we could try that.
-	That's mostly my fault tbh I should have arrived earlier...
+	That's mostly my fault tbh, I should have arrived earlier...
+
+16/06/2025:
 -	I looked on the internet for cosine annealing+warm up(which one of the most popular lr policy for large models) but I din't find any usefull insights.  
 -	I restarted watching the TuneAdorable video on warmup.  
 	It goes over a part of the paper that says that some model will naturally decrease the learning rate sharpness as they also increase their loss over training steps.  
 	While some other models tend to have increase in lost sharpness over training steps.  
 	This reminded me of the double descent of local complexity for some model and single ascent+descent for other models in the NN always grok paper.  
-	I wander if there is a link between the two.  
+	I wander if there is a link between the two.
+
+17/06/2025:
+-	What if I used the loss sharpness as a regularization loss itself?  
+	I'm starting to link loss sharpness, local complexity and adversarial attacks together.  
+	They seem to be kind of measuring the same thing:  
+	**Concepts**:  
+ 	-	Loss sharpness is a measure of how much the loss changes over model param changes.
+ 	-	Adversarial attacks are the highest loss value points in a given range around a sample.
+  	-	Local complexity is a measurea of how much the output changes around a sample.
+   		(Btw I am ~90% sure that adversarial attacks would make up for better probes for local complexity measures instead of random orthognal points around a ball.)
+	**Properties**:  
+	For a given loss score:  
+	-	The lower the loss sharpness the better generalization is.
+ 	-	The lower the loss on adversarial attacks (in a given range ofc) the better the generalization is.
+	-	The lower the local complexity, the better generalization is.  
+   	The current ways (that I know of) to satisfy these regularization requirements are:  
+  	-	l1/2 norm
+   	-	data augmentation
+	-	adversarial training
+ 	-	dropout layers
+    I consider the last three methods to fall in the same family of regularization techniques: add some noise and force the model to have the same output.  
+   	That's because changing the input during training and expecting a similar output is equivalent to having a lower loss sharpness because it would be the same as changing the parameters and expcting a similar output.  
+   	*THis sentence probably won't make sense to me neither in a few days but it does for me right now.*  
+	While the last three are battle tested, I feel like there should be an aproach that is analytcal based rather than empirical based (the adv training is kinda analytical and empircal since it doe suse the loss gradients).  
+    > Note: I don't count architecture modifications such as layer/batch/sample normalization or skip connections since they are architectural modifications.  
+	Hopefully there is some sort of math trick to enfore loss flatness.
+	Maybe something like second degree gradient or l1/2 norm on the gradients themself?
+ 
+18/06/2025:
