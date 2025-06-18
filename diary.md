@@ -874,8 +874,8 @@
   	3. Safwan also recorded a dataset but the recording conditions were not good enough it seems + I had trained an act model isntead of a smolVLA model.    
 -	Overall the best performing model was a 4k training step model trained on the second dataset.  
 -	We wanted to try to add a second wrist camera on the other side of the claw we thought that it would enable the model to clearly see if the object was in between the claws.  
-	Unfortunatly we ran out of time before we could try that.
-	That's mostly my fault tbh, I should have arrived earlier...
+	Unfortunatly we ran out of time before we could try that.  
+	That's mostly my fault tbh, I should have arrived earlier...  
 
 16/06/2025:
 -	I looked on the internet for cosine annealing+warm up(which one of the most popular lr policy for large models) but I din't find any usefull insights.  
@@ -909,7 +909,24 @@
    	*THis sentence probably won't make sense to me neither in a few days but it does for me right now.*  
 	While the last three are battle tested, I feel like there should be an aproach that is analytcal based rather than empirical based (the adv training is kinda analytical and empircal since it doe suse the loss gradients).  
     > Note: I don't count architecture modifications such as layer/batch/sample normalization or skip connections since they are architectural modifications.  
-	Hopefully there is some sort of math trick to enfore loss flatness.
-	Maybe something like second degree gradient or l1/2 norm on the gradients themself?
+	Hopefully there is some sort of math trick to enfore loss flatness.  
+	Maybe something like second degree gradient or l1/2 norm on the gradients themself?  
+-	I started a new branch on my learning-deep-learning repo.  
+	To test my theory I will benchmark a small MNIST CNN (to get results ASAP) and compare all the commonly used regularization methods + mine.  
+	Optionally, I will use some interpretation tools but I doupt I will have enough time for that.  
+-	Everything is setup I've got the model trainging done + test with adv attacked samples to go from ~98% accuracy to ~60%.  
+	Additionally, I could reduce the number of training samples.  
  
 18/06/2025:
+-	I asked chatGPT if my idea of enforcing loss fltaness was a good idea and if there are potential flaws.  
+	It said that it's a pretty good idea (as it always does lol) and that there are already are reg methods that have been suggested such as Sharpness Aware Minimization (SAM).  
+	That's exactly what I was thinking about!  
+	Its paper is from 2020 and it doesn't seem like it has been actually used that much, it's the first I come across it(tbf I haven't checked out the training mehtod of every model but you get what I mean(right?)).  
+-	I watched [this introductory video](https://www.youtube.com/watch?v=k6-jJ58MFKU&ab_channel=Yuxiang%22Shawn%22Wang) on it.  
+	And the big (and only?) difference between my idea and the papaers implementation is that the loss sharpness is measured through a you guessed ... probe ball of the parameters.  
+	Basically it compares the loss diff between the current model and a randomly modified one.  
+-	Hopefully I can improve this by using some sort of math trick like the ones I wrote about yesterday.  
+-	Now the plans have changed, I will first test SAM with a lot of probes, since I am training a small model on a small, (too?)easy dataset.  
+  	The idea is that an empirical method with a lot of compute is as good as analitycal one.  
+ 	If it doesn't perform correctly then it wouldn't even be worth experiment on an anlitycal version.
+-	I probably would have to make all of these assumptions checked by chatGPT before spending too much time on this.  
