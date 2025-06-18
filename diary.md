@@ -909,6 +909,7 @@
    	*THis sentence probably won't make sense to me neither in a few days but it does for me right now.*  
 	While the last three are battle tested, I feel like there should be an aproach that is analytcal based rather than empirical based (the adv training is kinda analytical and empircal since it doe suse the loss gradients).  
     > Note: I don't count architecture modifications such as layer/batch/sample normalization or skip connections since they are architectural modifications.  
+
 	Hopefully there is some sort of math trick to enfore loss flatness.  
 	Maybe something like second degree gradient or l1/2 norm on the gradients themself?  
 -	I started a new branch on my learning-deep-learning repo.  
