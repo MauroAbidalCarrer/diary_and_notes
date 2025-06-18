@@ -929,5 +929,18 @@
 -	Hopefully I can improve this by using some sort of math trick like the ones I wrote about yesterday.  
 -	Now the plans have changed, I will first test SAM with a lot of probes, since I am training a small model on a small, (too?)easy dataset.  
   	The idea is that an empirical method with a lot of compute is as good as analitycal one.  
- 	If it doesn't perform correctly then it wouldn't even be worth experiment on an anlitycal version.
+ 	If it doesn't perform correctly then it wouldn't even be worth experiment on an anlitycal version.  
 -	I probably would have to make all of these assumptions checked by chatGPT before spending too much time on this.  
+-	I checked with uncleGPT and.... the analytical SAM versions/alternative have already been proposed, in fact some of them were proposed before SAM.   
+	Basically, the analitycal way of measuring the loss sharpness is by using the Hessian of the model params.  
+-	I watched this [nice video about the hessian](https://www.youtube.com/watch?v=5qD53Exg6kQ&ab_channel=DigitalMedia-ImperialCollegeLondon).
+-	I read this [nice blog post about the hessian](https://maximiliandu.com/course_notes/Optimization/Optimization/Notes/Hessian%20Matrix%20b8813e511a1745bdaeaaf71e758eac5d.html).
+-	I read the (very) beggining of its [wikipidia page](https://en.wikipedia.org/wiki/Hessian_matrix).
+-	KTs:
+	-	The hessian is the partial derivative, of the partial derivative of the model, i.e: it's the second degree partial derivative of the model.    
+	-	It allows us to locally aproximate the loss as a quadratic function.  
+		And from that we can derive a bunch of things like, are we in a local minimum/maximum/saddle point (I still don't fully understand the latter).
+	-	I should probably read more /watch more videos about it.
+ -	uncleGPT also said that the eigenvalues of the Hessian are sometimes used.
+ 	I defenetly need to understand the eignevalues better tho, they seem pretty cool(this will probably lead me down a rabbit hole).
+-	Given that the other analytical versions are not used either I starting to think that it's not really a practical solution to use the loss sharpness as reg loss.
