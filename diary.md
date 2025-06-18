@@ -937,10 +937,11 @@
 -	I read this [nice blog post about the hessian](https://maximiliandu.com/course_notes/Optimization/Optimization/Notes/Hessian%20Matrix%20b8813e511a1745bdaeaaf71e758eac5d.html).
 -	I read the (very) beggining of its [wikipidia page](https://en.wikipedia.org/wiki/Hessian_matrix).
 -	KTs:
-	-	The hessian is the partial derivative, of the partial derivative of the model, i.e: it's the second degree partial derivative of the model.    
-	-	It allows us to locally aproximate the loss as a quadratic function.  
-		And from that we can derive a bunch of things like, are we in a local minimum/maximum/saddle point (I still don't fully understand the latter).
-	-	I should probably read more /watch more videos about it.
- -	uncleGPT also said that the eigenvalues of the Hessian are sometimes used.
- 	I defenetly need to understand the eignevalues better tho, they seem pretty cool(this will probably lead me down a rabbit hole).
--	Given that the other analytical versions are not used either I starting to think that it's not really a practical solution to use the loss sharpness as reg loss.
+	-	The hessian is the partial derivative, of the partial derivative of the model, i.e: it's the second degree partial derivative of the model.     
+	-	It allows us to locally aproximate the loss as a quadratic function.    
+		And from that we can derive a bunch of things like, are we in a local minimum/maximum/saddle point (I still don't fully understand the latter).  
+	-	I should probably read more /watch more videos about it.  
+ -	uncleGPT also said that the eigenvalues of the Hessian are sometimes used.  
+ 	I defenetly need to understand the eignevalues better tho, they seem pretty cool(this will probably lead me down a rabbit hole).  
+-	Given that the other analytical versions are not used either I starting to think that it's not really a practical solution to use the loss sharpness as reg loss.  
+-	I think I will keep looking into it until the 20th this way I will improve my understanding of the math behind it all.  
