@@ -944,4 +944,36 @@
  -	uncleGPT also said that the eigenvalues of the Hessian are sometimes used.  
  	I defenetly need to understand the eignevalues better tho, they seem pretty cool(this will probably lead me down a rabbit hole).  
 -	Given that the other analytical versions are not used either I starting to think that it's not really a practical solution to use the loss sharpness as reg loss.  
--	I think I will keep looking into it until the 20th this way I will improve my understanding of the math behind it all.  
+-	I think I will keep looking into it until the 20th this way I will improve my understanding of the math behind it all.
+-	Watched this [video on eigen values](https://www.youtube.com/watch?v=1sDBruay100&t=3s&ab_channel=BrainStationAdvanced).
+	Kts:
+  	-	Eigen vectors of a matrix point toward the directions where the "dotted" vectors do not rotate/change direction.
+   	-	Eigen values tell how much "dotted" vectors are strched if they are on the corresponding eigeven vector's line.
+    -	If eigen values are imaginary then "dotted" vectors always rotate.  
+
+
+19/06/2025:
+-	I watched this [video on ViT models outperforming resnet when trained with SAM](https://youtu.be/oDtcobGQ7xU?si=LukXniRNHg6Ag054).
+	Kts:
+	-	I missunderstood how SAM works, it doens't actually randomly probe the model parameter's space but rather adds the (positive) gradient to the model and then remasures the loss.  
+ 		Then i believe it uses the diff between the current model's loss and the "adv model"'s loss as an additional reg loss.    
+ 		This is similar to adv attacks but instead of adv changing the model's input we change it's params.  
+  	-	I wonder if this is more efficient than adv training and if it's possible to implement some sort of "freeSam" that would be analogous to freeAT.  
+   	-	As I understood the video, it seems that resnets don't benefit as much as the ViT from SAM since they already have regullarization inforced in their architecture.
+-	I also watched a video of the same author on [how he got into deepmind](https://youtu.be/SgaN-4po_cA?si=LS7tRukI28HlLw1t).
+	KTs:
+	-	Don't focus on one company at a time try multiple ones.
+ 	-	The success rate is super low.
+  	-	You need a referal.
+   	-	You can get a referal by creating DL content and getting attention from a employe in a company
+   	-	You can get a referal by contributing to open source code (sounds more feasable).
+   	-	You need to know software theoretical stuff mostly data structures+algorithms.   
+    	It seems like competitive coding is a good way to learn that + there are some books made for that like "cracking the coding interview".
+	-	He also read the papers  published (and more generally work I asume) of people he would get interviewd by, prior to those interviews.
+ 	Given the expected low success rate I should probably look into more job posts to find more job expectation/requirements.
+-	I have only one day and half left from my deadline of my goal to learn and contribute to fundemental/academic work.
+	I feel like I *could* do something in a ~week but will most likely be useless and also lead me down a rabbit hole.
+	I think it would be better for me to either participate to the [NeurIPS kaggle competition](https://www.kaggle.com/competitions/neurips-open-polymer-prediction-2025/overview) and/or the [Geophysical Waveform Inversion](https://www.kaggle.com/competitions/waveform-inversion).  
+	The second one is finishing in 11 days.  
+	I could pick up already made code get familiar with the excercise of doing a competition and then restart fresh on the NeurIPS one, finishing in three months.
+  	Danm  three months is actually a lot...
