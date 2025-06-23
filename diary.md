@@ -959,8 +959,10 @@
  		Then i believe it uses the diff between the current model's loss and the "adv model"'s loss as an additional reg loss.    
  		This is similar to adv attacks but instead of adv changing the model's input we change it's params.  
   	-	I wonder if this is more efficient than adv training and if it's possible to implement some sort of "freeSam" that would be analogous to freeAT.  
-   	-	As I understood the video, it seems that resnets don't benefit as much as the ViT from SAM since they already have regullarization inforced in their architecture.
--	I also watched a video of the same author on [how he got into deepmind](https://youtu.be/SgaN-4po_cA?si=LS7tRukI28HlLw1t).
+   	-	As I understood the video, it seems that resnets don't benefit as much as the ViT from SAM since they already have regullarization inforced in their architecture.  
+	I'm pretty happy actually that the idea I had turned out to have already been tested AND yelled positive results.  
+	I interpret that finding as a sign that I understand what I am studying which is pretty valuable since I am studying on my own without someone giving me signs on what do right or wrong.  
+-	I also watched a video of the same author on [how he got into deepmind](https://youtu.be/SgaN-4po_cA?si=LS7tRukI28HlLw1t).  
 	KTs:
 	-	Don't focus on one company at a time try multiple ones.
  	-	The success rate is super low.
@@ -975,5 +977,42 @@
 	I feel like I *could* do something in a ~week but will most likely be useless and also lead me down a rabbit hole.
 	I think it would be better for me to either participate to the [NeurIPS kaggle competition](https://www.kaggle.com/competitions/neurips-open-polymer-prediction-2025/overview) and/or the [Geophysical Waveform Inversion](https://www.kaggle.com/competitions/waveform-inversion).  
 	The second one is finishing in 11 days.  
-	I could pick up already made code get familiar with the excercise of doing a competition and then restart fresh on the NeurIPS one, finishing in three months.
-  	Danm  three months is actually a lot...
+	I could pick up already made code get familiar with the excercise of doing a competition and then restart fresh on the NeurIPS one, finishing in three months.  
+  	Danm  three months is actually a lot...  
+
+20/06/2025:
+-	Okay now I am fully committed to doing those two competitions.
+	It took me a while to understand what the competition is about but it turns out that it's actually fairly simple:
+	-	The goal of the competition is to infer what lies beneath the ground.
+   	-	To do so we use sound waves emmited from a source (like a thumper truck or a detonation).  
+    	Then we record the sound for a few seconds with some microphones arranged along a line and we repeat the experiment (each called "shots" I believe).
+	-	The resulting data is a 3D array of shape [nb shots, duration * record frequency, nb microphones] where the value is the magnitude of the sound wave (hopefully I didn't miss use that term).
+	-	We can use that data to infer a [velocity map](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FFigure-a-summarizes-the-DL-FWI-information-flow-Figure-b-shows-the-SEAM-velocity_fig1_366026572&psig=AOvVaw3qghZDhXOhcRGGkR9584Fi&ust=1750775715475000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJDKi_fhh44DFQAAAAAdAAAAABA1) of shape [width, height] where the values are in some speed metric like km/s.  
+-	I will need to crank in more hours a week right now I must be at around ~27 hours a week.  
+  	My goal is to get a entry level job as DL engineer.  
+	To get to the required level and have a proper CV/portfolio I will probably need to get up to ~40 hours a week.  
+-	I looked at the most voted notebooks and I found this [ConvNeXt solution](https://www.kaggle.com/code/brendanartley/convnext-full-resolution-baseline).
+	It refers to a [HGNet solution](https://www.kaggle.com/code/brendanartley/hgnet-v2-starter), which itself refres to this [Unet solution](https://www.kaggle.com/code/egortrushin/gwi-unet-with-float16-dataset).
+	I also found this [Physics informed + transfer learning Unet paper](https://arxiv.org/pdf/2212.02338).
+-	I started reading the paper, it's only 5 pages.
+	It feels like a breath of fresh air compared to the other verbose+repetitive+esoteric papers I have read so far.
+	However it does also feel like some parts of it have been literally cut out...
+
+22/06/2025:  
+-	Finished reading the paper, KTs:  
+	-	The paper links to deep wave which is a full wave form inversion package built on top of Pytorch to do Physics informed training, thats really cool.  
+	-	The transfer learning and PINN are great...
+ 	-	They used 2xV100 which is *fairly* affordable on Vast.
+	-	They removed the fist encoder to decoder skip connection to prevent recording arctifacts to impact the quality of the results.  
+  		I believe there's also some other stuff done to the skip connections to prevent the since the vertical vertical dimensions of the input and output don't really correspond.  
+  	-	I believe there is some pretraining stuff I haven't quite understood but I will get back to it if I chose to follow there method.
+-	I read the Unet solution notebook, it uses a 16float (instead of 32float) version of the dataset.  
+	Downloading just a subset of the 16 float dataset takes 1h30mins. That's gonna be an issue given that I tend to destry my instances to save on billing at the end of the day.
+	If I stop then restart them I have to hope that someone hasn't rented the GPU in the meantime which just as inpractical as recreating a new instance.
+
+23/06/2025:  
+-	I read the HGNet solution, ngl the architecture it's pretty damn complex.
+	I skip some architectural details to save some time as this not even the best solution of the author.  
+-	It uses a [backbone trained on Imagenet](https://huggingface.co/timm/hgnetv2_b2.ssld_stage2_ft_in1k) which is super weird since that's a 3 channels input when FWI has only one channel and has very different shapes to photos.  
+	If I didn't miss interpreted the origin of the backbone, that seems like a huge room for improvement(to not say terrible idea).    
+	I would probably use the same backbone used in the paper instead.  
