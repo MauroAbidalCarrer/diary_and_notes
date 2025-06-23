@@ -1013,7 +1013,8 @@
 23/06/2025:  
 -	I read the HGNet solution, KTs:
 	-	ngl the architecture it's pretty damn complex.  
-		I skip some architectural details to save some time as this not even the best solution of the author.    
+		I skip some architectural details to save some time as this not even the best solution of the author.
+	-	It introduces a downcaled version of the dataset that is WAAAAAAAAAY smaller so that's what I'll be using instead.  
 	-	It uses a [backbone trained on Imagenet](https://huggingface.co/timm/hgnetv2_b2.ssld_stage2_ft_in1k) which is super weird since that's a 3 channels input when FWI has only one channel and has very different shapes to photos.    
 		If I didn't miss interpreted the origin of the backbone, that seems like a huge room for improvement(to not say terrible idea).    
 		I would probably use the same backbone used in the paper instead. 
