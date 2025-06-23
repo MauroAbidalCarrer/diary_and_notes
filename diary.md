@@ -1011,8 +1011,11 @@
 	If I stop then restart them I have to hope that someone hasn't rented the GPU in the meantime which just as inpractical as recreating a new instance.
 
 23/06/2025:  
--	I read the HGNet solution, ngl the architecture it's pretty damn complex.
-	I skip some architectural details to save some time as this not even the best solution of the author.  
--	It uses a [backbone trained on Imagenet](https://huggingface.co/timm/hgnetv2_b2.ssld_stage2_ft_in1k) which is super weird since that's a 3 channels input when FWI has only one channel and has very different shapes to photos.  
-	If I didn't miss interpreted the origin of the backbone, that seems like a huge room for improvement(to not say terrible idea).    
-	I would probably use the same backbone used in the paper instead.  
+-	I read the HGNet solution, KTs:
+	-	ngl the architecture it's pretty damn complex.  
+		I skip some architectural details to save some time as this not even the best solution of the author.    
+	-	It uses a [backbone trained on Imagenet](https://huggingface.co/timm/hgnetv2_b2.ssld_stage2_ft_in1k) which is super weird since that's a 3 channels input when FWI has only one channel and has very different shapes to photos.    
+		If I didn't miss interpreted the origin of the backbone, that seems like a huge room for improvement(to not say terrible idea).    
+		I would probably use the same backbone used in the paper instead. 
+-	Turns out the author as a better less voted (compared to its ResneXt submission) submission that uses CAFormer (wtf is that architecture now (-_-)?).
+	it does refer to the ResNeXt notebook tho so will still have to read that before.  
