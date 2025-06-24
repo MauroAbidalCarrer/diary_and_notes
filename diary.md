@@ -1020,3 +1020,23 @@
 		I would probably use the same backbone used in the paper instead. 
 -	Turns out the author as a better less voted (compared to its ResneXt submission) submission that uses CAFormer (wtf is that architecture now (-_-)?).
 	it does refer to the ResNeXt notebook tho so will still have to read that before.  
+
+24/06/2025:
+-	I asked uncleGPT if ther was a shape mismatch between the FWI input and the backbone's first conv layer channels.  
+	It spotted that the backbone is created using timm.create_model with the in_chans set to 5 (which corresponds to the number of recorded shots for each map).
+	CHAT says that it basically preserves some of the initial weight and adds the others that are required to the stem.  
+	That's suprising, I thought the model would get a single channel input and then output a mean of the outputs of the shots.  
+-	Before doing all of that I'm gonna setup my repo to be able to:
+  	-	Access a subset of the preprocessed dataset (like %20, a fraction I can download and train on (fairly)quickly).  
+   	-	Compute the max LR for a one cycle LR scheduler.  
+	-	that should be it I think...
+
+
+
+
+
+
+
+
+
+
