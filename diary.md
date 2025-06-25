@@ -1035,7 +1035,6 @@
 	So I ignored it (this is most likely a bad idea...).
 -	Also I (re)discovered that the 5 shots are recoreded with a different source position so it actually makes sense to use them as separate channels.
 	Now I remember that it was explained in the competition description.  
-
-
-
-
+-	I read some of the timm doc and I discovered two things:
+	-	EMA models: basically we use a moving average of the params instead of the actual weights to smooth out the learning curve.
+ 	-	PrefetchLoader speeds up training by asynchronously loading data in GPU VRAM allowing to train the model on the previous batch in the mean time.
