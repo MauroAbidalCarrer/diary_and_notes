@@ -1030,12 +1030,11 @@
   	-	Access a subset of the preprocessed dataset (like %20, a fraction I can download and train on (fairly)quickly).  
    	-	Compute the max LR for a one cycle LR scheduler.  
 	-	that should be it I think...
-
-
-
-
-
-
+-	I ended up implementing my own Dataset class instead of the one provided in the CAFormer notebook because I didn't quite understand it.  
+	It also uses the base open-FWI datasets and I clearly don't want to have to download it to a new vast instance.  
+	So I ignored it (this is most likely a bad idea...).
+-	Also I (re)discovered that the 5 shots are recoreded with a different source position so it actually makes sense to use them as separate channels.
+	Now I remember that it was explained in the competition description.  
 
 
 
