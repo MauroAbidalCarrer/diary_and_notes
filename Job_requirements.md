@@ -28,3 +28,11 @@ anthropic interpretability engineer:
   -  Make launching ML experiments and manipulating+analyzing the results fast and easy
   -  Creating an interactive visualization of attention between tokens in a language model
   -  We require at least a Bachelor's degree in a related field or equivalent experience.
+
+ML intern Neuralink:
+  -  Evidence in delivering high-impact projects either in academia or industry
+  -  Prior experience designing and building Machine Learning models
+  -  Deep understanding of machine learning concepts and fundamentals
+  -  Experience in analyzing complex datasets, driving insights, and communicating results in a simple and clear way to both technical and non-technical stakeholders
+  -  Excellent communication and collaboration skills
+  -  Strong coding skills, with a focus on clean, efficient, and scalable code development
