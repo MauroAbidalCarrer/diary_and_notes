@@ -1038,3 +1038,29 @@
 -	I read some of the timm doc and I discovered two things:
 	-	EMA models: basically we use a moving average of the params instead of the actual weights to smooth out the learning curve.
  	-	PrefetchLoader speeds up training by asynchronously loading data in GPU VRAM allowing to train the model on the previous batch in the mean time.
+
+
+01/07/2025:
+-	I am going to keep working on the competition a little longer as  I discovered that it is possible to do "late submissions" in kaggle.    
+  	I spent a fair bit of effort/time setting things up and I only started actually improving the model yesterday.  
+ 	I will stop working on it in 4 days, this way I will have spent two weeks on it.
+ 	I don't want to spend more than two weeks on it tho.
+ 	I'm afraid I will get caught up in feature creep like I did in the cnn from scratch project(and pretty much every other project I'v worked on).   
+-	I will first clean the repo branches to include the pixel wise stats in addition to the dataset wise stats in a separate branch.  
+-	Then I will fix the laoding of arrays maybe using the mmap argument of the numpy load function to avoid allocating 60+ GBs.  
+	This has turned out to cause a lot of problems as I had to use more expensive instances in vast and can't run the training code on kaggle.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
