@@ -31,7 +31,16 @@ Tasks:
           Production is in quotes because it's for a kaggle competition, not an actual services.
           (done)
         - Write "production" code (not there yet I still need to improve my skills and my pytorch knowledge).
-        - Get a good score by reimplementing someone else's solution (one third there) 
+        - Get a good score by reimplementing someone else's solution (one third there)
+         fix scheduler step
+        fix pixel wise normalization
+        compare pixel wise nom with pixel agnostic norm?
+             use wandb?
+        use data augmentation?
+            - Use simple flip, noise first?
+            - use synthetic data generation?
+        use PINN?#                                                                                                                                                                                                                                                                                            
+          
 - Reinforcement learning
     - chess?
     - sc2?
