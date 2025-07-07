@@ -36,3 +36,17 @@ ML intern Neuralink:
   -  Experience in analyzing complex datasets, driving insights, and communicating results in a simple and clear way to both technical and non-technical stakeholders
   -  Excellent communication and collaboration skills
   -  Strong coding skills, with a focus on clean, efficient, and scalable code development
+
+
+Princeton university, laboratory of artificial intelligence - Research Software Engineer:
+  - Bachelor’s degree or equivalent in Computer Science, Engineering, Applied Math, Sciences, or related computational field.
+  - A minimum of 2 years as a Research Software Engineer or equivalent experience (e.g. graduate school, industry experience, open-source software development, etc.).
+  - Proficiency in programming languages like Python and C++.
+  - Expertise in machine learning algorithms and techniques. Familiarity with AI frameworks like TensorFlow, PyTorch, or Scikit-learn.
+  - Experience working with large datasets and familiarity with GPU computing environments.
+  - Demonstrated success:
+  - Consistently using conventional and readable coding style.
+  - Creating comprehensive and well-written documentation.
+  - Using version control systems.
+  - Strong written and oral technical communication skills with the ability to present complex research findings to technical and non-technical audiences.
+
