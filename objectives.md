@@ -39,7 +39,11 @@ Tasks:
         use data augmentation?
             - Use simple flip, noise first?
             - use synthetic data generation?
-        use PINN?#                                                                                                                                                                                                                                                                                            
+        use PINN?#
+    - Child Mind Institute 2025 competition
+        -  Use EMA of model
+        -  Use post/pre truncating/padding instead of center truncating/padding
+        -  
           
 - Reinforcement learning
     - chess?
