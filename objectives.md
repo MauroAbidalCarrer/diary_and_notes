@@ -44,6 +44,7 @@ Tasks:
         -  Use EMA of model
         -  Use post/pre truncating/padding instead of center truncating/padding
         -  use third branch for thm input
+        - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding
           
 - Reinforcement learning
     - chess?
