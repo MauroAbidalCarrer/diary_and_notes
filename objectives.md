@@ -26,20 +26,6 @@ Tasks:
 ### Practical work: 20th of June to 20th Jully (30 days)
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - kaggle  
-    - Geophisycal Full waveform Inversion  
-        - read "production" code and solutions.  
-          Production is in quotes because it's for a kaggle competition, not an actual services.
-          (done)
-        - Write "production" code (not there yet I still need to improve my skills and my pytorch knowledge).
-        - Get a good score by reimplementing someone else's solution (one third there)
-         fix scheduler step
-        fix pixel wise normalization
-        compare pixel wise nom with pixel agnostic norm?
-             use wandb?
-        use data augmentation?
-            - Use simple flip, noise first?
-            - use synthetic data generation?
-        use PINN?#
     - Child Mind Institute 2025 competition
         -  Use EMA of model
         -  Collapse non-BFRBs target into a single one to ease learning
