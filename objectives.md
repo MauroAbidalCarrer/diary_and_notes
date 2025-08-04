@@ -42,9 +42,29 @@ Tasks:
         use PINN?#
     - Child Mind Institute 2025 competition
         -  Use EMA of model
-        -  Use post/pre truncating/padding instead of center truncating/padding
-        -  use third branch for thm input
-        - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding
+        -  Collapse non-BFRBs target into a single one to ease learning
+        -  put std normalization step in the model to since we are using CV model ensemble
+        -  EDA input meta data (seq length, target, ...) and model performance
+        -  ensemble:
+            -  Use more models
+            -  Weight models
+            -  Both solutions above could be powered by the EDA
+        - Equalize target distribution through data augmentation
+        - Augment training by using external datasets and self supervised training on them.
+        - Use Self supervised training:
+            - Improve embending with masking + extra decoder
+            - Use more of the dataset data:
+                - extra data:
+                    - orientation of the subject during the sequence
+                    - phase during the sequence "behavior" column
+                - By creating new targets during training (only viable for orientation column)  
+                  Targets would be a cartesian product of the competition's targets adn the orientations.  
+                  - During training: the model is trained on those clases
+                  - During inference: the model's output is collapsed to only the competition's target class
+
+        [//]: # ( Use post/pre truncating/padding instead of center truncating/padding)
+        [//]: # ( -  use third branch for thm input)
+        [//]: # ( - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding)
           
 - Reinforcement learning
     - chess?
