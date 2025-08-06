@@ -31,6 +31,7 @@ Tasks:
         -  Collapse non-BFRBs target into a single one to ease learning
         -  put std normalization step in the model to since we are using CV model ensemble
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
+        -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25
         -  EDA input meta data (seq length, target, ...) and model performance
         -  ensemble:
             -  Use more models
