@@ -31,10 +31,6 @@ Tasks:
         -  Collapse non-BFRBs target into a single one to ease learning
         -  put std normalization step in the model to since we are using CV model ensemble
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
-        -  Update hyperparams (again):
-            -  Use smaller btach sizes, top notebooks use 64 batch size, I use 256
-            -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25
-            -  Increase patience, top notebooks use 40 patience
         - Aggregate patches of the ToF sensors data
         -  EDA input meta data (seq length, target, ...) and model performance
         -  ensemble:
@@ -54,6 +50,10 @@ Tasks:
                   - During training: the model is trained on those clases
                   - During inference: the model's output is collapsed to only the competition's target class
 
+        [//]: # (-  Update hyperparams (again):)
+        [//]: # (    -  Use smaller btach sizes, top notebooks use 64 batch size, I use 256)
+        [//]: # (    -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25)
+        [//]: # (    -  Increase patience, top notebooks use 40 patience)
         [//]: # ( Use post/pre truncating/padding instead of center truncating/padding)
         [//]: # ( -  use third branch for thm input)
         [//]: # ( - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding)
