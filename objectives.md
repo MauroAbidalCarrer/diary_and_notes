@@ -50,13 +50,13 @@ Tasks:
                   - During training: the model is trained on those clases
                   - During inference: the model's output is collapsed to only the competition's target class
 
-        [//]: # (-  Update hyperparams (again):)
-        [//]: # (    -  Use smaller btach sizes, top notebooks use 64 batch size, I use 256)
-        [//]: # (    -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25)
-        [//]: # (    -  Increase patience, top notebooks use 40 patience)
-        [//]: # ( Use post/pre truncating/padding instead of center truncating/padding)
-        [//]: # ( -  use third branch for thm input)
-        [//]: # ( - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding)
+        <!-- -  Update hyperparams (again): -->
+        <!--    -  Use smaller btach sizes, top notebooks use 64 batch size, I use 256 -->
+        <!--    -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25 -->
+        <!--    -  Increase patience, top notebooks use 40 patience -->
+        <!-- Use post/pre truncating/padding instead of center truncating/padding -->
+        <!-- -  use third branch for thm input -->
+        <!-- - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding -->
           
 - Reinforcement learning
     - chess?
