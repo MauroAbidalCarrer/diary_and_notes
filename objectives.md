@@ -30,7 +30,19 @@ Tasks:
         -  Use EMA of model
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         - Aggregate patches of the ToF sensors data
-        -  EDA input meta data (seq length, target, ...) and model performance
+        -  EDA input meta dataand model performance
+            -  true seq length
+            -  nan ratios
+            -  thm/tof removed?
+            -  demographics?
+            -  target class
+            -  compute pearson correlation?
+            -  compute recall and precision to see which one is preventing the f1 score to increase
+            -  orientation
+            -  phases durations
+        -  make hyper paramater tuning more efficient
+        -  speed up training with implementation improvements?
+        -  speed up training by parallelizing folds training
         -  ensemble:
             -  Use more models
             -  Weight models
