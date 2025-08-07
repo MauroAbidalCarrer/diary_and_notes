@@ -27,6 +27,8 @@ Tasks:
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - kaggle  
     - Child Mind Institute 2025 competition
+        - Use 100% percentile for sequence len padding
+        - Increase the number of rnn layers to 2.
         -  Use EMA of model
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         - Aggregate patches of the ToF sensors data
