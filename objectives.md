@@ -27,6 +27,7 @@ Tasks:
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - kaggle  
     - Child Mind Institute 2025 competition
+        - sequence wise std norm
         -  Use EMA of model
         -  Collapse non-BFRBs target into a single one to ease learning
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
