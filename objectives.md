@@ -27,10 +27,9 @@ Tasks:
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - kaggle  
     - Child Mind Institute 2025 competition
+        -  Aggregate patches of the ToF sensors data
         -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays.
-        -  Use EMA of model
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
-        - Aggregate patches of the ToF sensors data
         -  EDA input meta dataand model performance
             -  true seq length
             -  nan ratios
@@ -41,6 +40,7 @@ Tasks:
             -  compute recall and precision to see which one is preventing the f1 score to increase
             -  orientation
             -  phases durations
+        -  Use EMA of model
         -  make hyper paramater tuning more efficient
         -  speed up training with implementation improvements?
         -  speed up training by parallelizing folds training
