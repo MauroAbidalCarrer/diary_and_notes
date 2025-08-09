@@ -27,6 +27,7 @@ Tasks:
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - kaggle  
     - Child Mind Institute 2025 competition
+        -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays.
         -  Use EMA of model
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         - Aggregate patches of the ToF sensors data
