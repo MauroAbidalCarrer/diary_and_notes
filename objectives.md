@@ -27,8 +27,6 @@ Tasks:
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - kaggle  
     - Child Mind Institute 2025 competition
-        -  Aggregate patches of the ToF sensors data
-        -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays.
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         -  EDA input meta dataand model performance
             -  true seq length
@@ -61,6 +59,8 @@ Tasks:
                   - During training: the model is trained on those clases
                   - During inference: the model's output is collapsed to only the competition's target class
 
+        <!-- -  Aggregate patches of the ToF sensors data -->
+        <!-- -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays. -->
         <!-- - Increase the number of rnn layers to 2. -->
         <!-- - Use 100% percentile for sequence len padding -->
         <!-- -  Collapse non-BFRBs target into a single one to ease learning -->
