@@ -44,7 +44,7 @@ Tasks:
         -  speed up training by parallelizing folds training
         -  ensemble:
             -  Use more models
-            -  Weight models
+            -  Weight models with meta data adn during inference, see best 3 blend code
             -  Both solutions above could be powered by the EDA
         - Equalize target distribution through data augmentation
         - Augment training by using external datasets and self supervised training on them.
