@@ -25,7 +25,9 @@ Tasks:
 
 ### Practical work: 20th of June to 20th Jully (30 days)
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
-- kaggle  
+- Reinforcement learning
+    - chess?
+- kaggle
     - Child Mind Institute 2025 competition
         -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         -  EDA input meta dataand model performance
@@ -42,23 +44,24 @@ Tasks:
         -  make hyper paramater tuning more efficient
         -  speed up training with implementation improvements?
         -  speed up training by parallelizing folds training
+        - Use Self supervised training:
+            - orientation of the subject during the sequence
+            - Turn demogrpahics into auxiliary target targets
         -  ensemble:
             -  Use more models
-            -  Weight models with meta data adn during inference, see best 3 blend code
+            -  Weight models with:
+                -  meta data/performance EDA
+                -  entropy + Jensen–Shannon distance
+                -  use gating model to weight models, gating model could take as input:
+                    -  meta data
+                    -  sub model meta data auxiliary loss
+                    -  sub model index/ID
             -  Both solutions above could be powered by the EDA
         - Equalize target distribution through data augmentation
         - Augment training by using external datasets and self supervised training on them.
-        - Use Self supervised training:
-            - Improve embending with masking + extra decoder
-            - Use more of the dataset data:
-                - extra data:
-                    - orientation of the subject during the sequence
-                    - phase during the sequence "behavior" column
-                - By creating new targets during training (only viable for orientation column)  
-                  Targets would be a cartesian product of the competition's targets adn the orientations.  
-                  - During training: the model is trained on those clases
-                  - During inference: the model's output is collapsed to only the competition's target class
 
+                
+        <!-- - phase during the sequence "behavior" column -->
         <!-- -  Aggregate patches of the ToF sensors data -->
         <!-- -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays. -->
         <!-- - Increase the number of rnn layers to 2. -->
@@ -74,7 +77,6 @@ Tasks:
         <!-- -  use third branch for thm input -->
         <!-- - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding -->
           
-- Reinforcement learning
-    - chess?
     - sc2?
+
     - huggin face's lerobot?
