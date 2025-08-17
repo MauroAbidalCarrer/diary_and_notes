@@ -29,7 +29,9 @@ Tasks:
     - chess?
 - kaggle
     - Child Mind Institute 2025 competition
-        -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
+        - training
+            -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
+            -  sgkf on jubject AND gesture
         -  EDA input meta dataand model performance
             -  true seq length
             -  nan ratios
