@@ -37,6 +37,8 @@ Tasks:
             - Move diff computing in model to reduce VRAM usage
             - add gravity direction
             - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
+            - Use demographics in preprocessing?
+            - remove some sequences ?
         - training:
             -  sgkf on jubject AND gesture
             -  Switch back to one scycle lr scheduler
@@ -62,7 +64,14 @@ Tasks:
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
 - use demographics as auxiliary tasks
-- Weight models by demographics aux loss
+- perf hp tuning with new auxiliary tasks
+- Weight models by demographics aux loss:
+    - first def weight as inversed aux loss
+    - then use an MLP?
+- Make a train/test split to eval weighting model
+- Switch back to one cycle lr
+- improve weighting with entropy+Jensen–Shannon distance
+- 
 <!-- - phase during the sequence "behavior" column -->
 <!-- -  Aggregate patches of the ToF sensors data -->
 <!-- -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays. -->
