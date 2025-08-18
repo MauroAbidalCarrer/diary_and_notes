@@ -51,8 +51,6 @@ Tasks:
         -  meta:
             - make ensemble with top models
             - search for a teamate
-        - Self supervised training:
-            - Turn demogrpahics into auxiliary targets
         -  ensemble:
             -  Use more folds/models
             -  Weight models with:
@@ -63,15 +61,15 @@ Tasks:
                 -  meta data/performance EDA
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
-- use demographics as auxiliary tasks
-- perf hp tuning with new auxiliary tasks
 - Weight models by demographics aux loss:
     - first def weight as inversed aux loss
     - then use an MLP?
 - Make a train/test split to eval weighting model
 - Switch back to one cycle lr
 - improve weighting with entropy+Jensen–Shannon distance
-- 
+
+  
+<!--            - Turn demogrpahics into auxiliary targets -->
 <!-- - phase during the sequence "behavior" column -->
 <!-- -  Aggregate patches of the ToF sensors data -->
 <!-- -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays. -->
