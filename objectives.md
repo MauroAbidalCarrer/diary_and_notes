@@ -27,58 +27,54 @@ Tasks:
 *Do some work on a practical,real world projects to put in my portfolio and improve my skills.*
 - Reinforcement learning
     - chess?
+    - sc2?
+- huggin face's lerobot?
 - kaggle
     - Child Mind Institute 2025 competition
-        - training
-            -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
+        - model:
+            - Use different branches for each thm/tof (we can probably use groups in the alexnets intead of using multiple alex nets)
+        - preprocessing:
+            - Move diff computing in model to reduce VRAM usage
+            - add gravity direction
+            - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
+        - training:
             -  sgkf on jubject AND gesture
-        -  EDA input meta dataand model performance
-            -  true seq length
-            -  nan ratios
-            -  thm/tof removed?
-            -  demographics?
-            -  target class
-            -  compute pearson correlation?
-            -  compute recall and precision to see which one is preventing the f1 score to increase
-            -  orientation
-            -  phases durations
-        -  Use EMA of model
-        -  make hyper paramater tuning more efficient
-        -  speed up training with implementation improvements?
-        -  speed up training by parallelizing folds training
-        - Use Self supervised training:
-            - orientation of the subject during the sequence
-            - Turn demogrpahics into auxiliary target targets
+            -  Switch back to one scycle lr scheduler
+            -  Equalize target distribution through data augmentation
+            -  speed up training by parallelizing folds training
+            -  Use EMA of model
+            -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
+        - hyperparmaters tuning:
+            -  make hyper paramater tuning more efficient
+        -  meta:
+            - make ensemble with top models
+            - search for a teamate
+        - Self supervised training:
+            - Turn demogrpahics into auxiliary targets
         -  ensemble:
-            -  Use more models
+            -  Use more folds/models
             -  Weight models with:
-                -  meta data/performance EDA
-                -  entropy + Jensen–Shannon distance
-                -  use gating model to weight models, gating model could take as input:
+                -  use weighting model:
                     -  meta data
                     -  sub model meta data auxiliary loss
                     -  sub model index/ID
-            -  Both solutions above could be powered by the EDA
-        - Equalize target distribution through data augmentation
-        - Augment training by using external datasets and self supervised training on them.
-
-                
-        <!-- - phase during the sequence "behavior" column -->
-        <!-- -  Aggregate patches of the ToF sensors data -->
-        <!-- -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays. -->
-        <!-- - Increase the number of rnn layers to 2. -->
-        <!-- - Use 100% percentile for sequence len padding -->
-        <!-- -  Collapse non-BFRBs target into a single one to ease learning -->
-        <!-- - sequence wise std norm -->
-        <!-- -  put std normalization step in the model to since we are using CV model ensemble -->
-        <!-- -  Update hyperparams (again): -->
-        <!--    -  Use smaller btach sizes, top notebooks use 64 batch size, I use 256 -->
-        <!--    -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25 -->
-        <!--    -  Increase patience, top notebooks use 40 patience -->
-        <!-- Use post/pre truncating/padding instead of center truncating/padding -->
-        <!-- -  use third branch for thm input -->
-        <!-- - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding -->
-          
-    - sc2?
-
-    - huggin face's lerobot?
+                -  meta data/performance EDA
+                -  entropy + Jensen–Shannon distance
+### By priorty:
+- use demographics as auxiliary tasks
+- Weight models by demographics aux loss
+<!-- - phase during the sequence "behavior" column -->
+<!-- -  Aggregate patches of the ToF sensors data -->
+<!-- -  Unify preprocessing and training/inference notebooks into a single one to avoid waiting for zip, upload, kaggle processing and downlod delays. -->
+<!-- - Increase the number of rnn layers to 2. -->
+<!-- - Use 100% percentile for sequence len padding -->
+<!-- -  Collapse non-BFRBs target into a single one to ease learning -->
+<!-- - sequence wise std norm -->
+<!-- -  put std normalization step in the model to since we are using CV model ensemble -->
+<!-- -  Update hyperparams (again): -->
+<!--    -  Use smaller btach sizes, top notebooks use 64 batch size, I use 256 -->
+<!--    -  Use a lot more epochs, top notebooks use ~100 epochs where I only use ~25 -->
+<!--    -  Increase patience, top notebooks use 40 patience -->
+<!-- Use post/pre truncating/padding instead of center truncating/padding -->
+<!-- -  use third branch for thm input -->
+<!-- - use other paddig methods like "same" or "reflect" padding for convolutions and sequence padding -->
