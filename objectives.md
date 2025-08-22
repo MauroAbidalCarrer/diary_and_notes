@@ -40,8 +40,7 @@ Tasks:
             - Use demographics in preprocessing?
             - remove some sequences ?
         - training:
-            -  sgkf on jubject AND gesture
-            -  Switch back to one scycle lr scheduler
+            -  Switch back to one cycle lr scheduler
             -  Equalize target distribution through data augmentation
             -  speed up training by parallelizing folds training
             -  Use EMA of model
@@ -53,12 +52,12 @@ Tasks:
             - search for a teamate
         -  ensemble:
             -  Use more folds/models
+                -  Don't stratify CV folding?
             -  Weight models with:
                 -  use weighting model:
                     -  meta data
                     -  sub model meta data auxiliary loss
                     -  sub model index/ID
-                -  meta data/performance EDA
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
 - Weight models by demographics aux loss:
@@ -68,7 +67,9 @@ Tasks:
 - Switch back to one cycle lr
 - improve weighting with entropy+Jensen–Shannon distance
 
-  
+
+     
+<!--            -  meta data/performance EDA -->
 <!--            - Turn demogrpahics into auxiliary targets -->
 <!-- - phase during the sequence "behavior" column -->
 <!-- -  Aggregate patches of the ToF sensors data -->
