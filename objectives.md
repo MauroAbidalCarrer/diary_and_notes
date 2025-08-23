@@ -42,7 +42,6 @@ Tasks:
         - training:
             -  Switch back to one cycle lr scheduler
             -  Equalize target distribution through data augmentation
-            -  speed up training by parallelizing folds training
             -  Use EMA of model
             -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         - hyperparmaters tuning:
@@ -69,6 +68,7 @@ Tasks:
 
 
      
+<!--            -  speed up training by parallelizing folds training -->
 <!--            -  meta data/performance EDA -->
 <!--            - Turn demogrpahics into auxiliary targets -->
 <!-- - phase during the sequence "behavior" column -->
