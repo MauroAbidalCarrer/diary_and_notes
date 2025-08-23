@@ -38,7 +38,6 @@ Tasks:
             - add gravity direction
             - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
             - Use demographics in preprocessing?
-            - remove some sequences ?
         - training:
             -  Switch back to one cycle lr scheduler
             -  Equalize target distribution through data augmentation
