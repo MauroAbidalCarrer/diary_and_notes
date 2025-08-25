@@ -34,7 +34,6 @@ Tasks:
         - model:
             - Use different branches for each thm/tof (we can probably use groups in the alexnets intead of using multiple alex nets)
         - preprocessing:
-            - Move diff computing in model to reduce VRAM usage
             - add gravity direction
             - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
             - Use demographics in preprocessing?
@@ -50,13 +49,14 @@ Tasks:
             - search for a teamate
         -  ensemble:
             -  Use more folds/models
-                -  Don't stratify CV folding?
+                -  Don't stratify CV folds?
             -  Weight models with:
                 -  use weighting model:
                     -  meta data
                     -  sub model meta data auxiliary loss
                     -  sub model index/ID
                 -  entropy + Jensen–Shannon distance
+                -  
 ### By priorty:
 - Weight models by demographics aux loss:
     - first def weight as inversed aux loss
@@ -66,7 +66,7 @@ Tasks:
 - improve weighting with entropy+Jensen–Shannon distance
 
 
-     
+<!-- - Move diff computing in model to reduce VRAM usage -->
 <!--            -  speed up training by parallelizing folds training -->
 <!--            -  meta data/performance EDA -->
 <!--            - Turn demogrpahics into auxiliary targets -->
