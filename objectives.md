@@ -56,7 +56,6 @@ Tasks:
                     -  sub model meta data auxiliary loss
                     -  sub model index/ID
                 -  entropy + Jensen–Shannon distance
-                -  
 ### By priorty:
 - Weight models by demographics aux loss:
     - first def weight as inversed aux loss
