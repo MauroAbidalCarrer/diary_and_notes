@@ -46,7 +46,6 @@ Tasks:
             -  make hyper paramater tuning more efficient
         -  meta:
             - make ensemble with top models
-            - search for a teamate
         -  ensemble:
             -  Use more folds/models
                 -  Don't stratify CV folds?
