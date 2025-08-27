@@ -56,10 +56,12 @@ Tasks:
                     -  sub model index/ID
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
-- Weight models by demographics aux loss:
-    - first def weight as inversed aux loss
-    - then use an MLP?
-- Make a train/test split to eval weighting model
+- use a gating model
+    - retrain experts
+    - retrain gating model
+    - update submission notebook
+    - submit new solution
+    - Make a train/test split to eval weighting model
 - Switch back to one cycle lr
 - improve weighting with entropy+Jensen–Shannon distance
 
