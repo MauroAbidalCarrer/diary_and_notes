@@ -57,8 +57,10 @@ Tasks:
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
 - use a gating model:
-    - Make the training and inference gating code more similar
-    - Make three splits: experts models training, gating model training, test split
+    - improve gating model features
+        - make sure that the entropy is properly computed
+        - norm its inputs
+        - 
 - Switch back to one cycle lr
 - improve weighting with entropy+Jensen–Shannon distance
 
