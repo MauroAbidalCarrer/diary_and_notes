@@ -56,12 +56,9 @@ Tasks:
                     -  sub model index/ID
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
-- use a gating model
-    - retrain experts
-    - retrain gating model
-    - update submission notebook
-    - submit new solution
-    - Make a train/test split to eval weighting model
+- use a gating model:
+    - Make the training and inference gating code more similar
+    - Make three splits: experts models training, gating model training, test split
 - Switch back to one cycle lr
 - improve weighting with entropy+Jensen–Shannon distance
 
