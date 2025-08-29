@@ -58,9 +58,8 @@ Tasks:
 ### By priorty:
 - use a gating model:
     - improve gating model features
-        - make sure that the entropy is properly computed
-        - norm its inputs
-        - 
+        - pass pass hidden activations as input
+        - use embeding body up to additive attention head
 - Switch back to one cycle lr
 - improve weighting with entropy+Jensen–Shannon distance
 
