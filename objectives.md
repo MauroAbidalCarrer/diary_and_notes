@@ -43,6 +43,7 @@ Tasks:
             -  Use EMA of model
             -  Try to avoid overfitting by taking the best mean CV score across all folds instead of using the peak CV epoch of each folds.
         - hyperparmaters tuning:
+            -  make hyper parameter tuning faster by re using the dataset so we don't have to create it and copy it to each GPU every time.
             -  make hyper paramater tuning more efficient
         -  meta:
             - make ensemble with top models
@@ -56,12 +57,7 @@ Tasks:
                     -  sub model index/ID
                 -  entropy + Jensen–Shannon distance
 ### By priorty:
-- use a gating model:
-    - improve gating model features
-        - pass pass hidden activations as input
-        - use embeding body up to additive attention head
 - Switch back to one cycle lr
-- improve weighting with entropy+Jensen–Shannon distance
 
 
 <!-- - Move diff computing in model to reduce VRAM usage -->
