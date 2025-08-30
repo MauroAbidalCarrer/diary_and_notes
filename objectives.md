@@ -45,19 +45,13 @@ Tasks:
         - hyperparmaters tuning:
             -  make hyper paramater tuning more efficient
         -  meta:
-            - make ensemble with top models
-        -  ensemble:
-            -  Use more folds/models
-                -  Don't stratify CV folds?
-            -  Weight models with:
-                -  use weighting model:
-                    -  meta data
-                    -  sub model meta data auxiliary loss
-                    -  sub model index/ID
-                -  entropy + Jensen–Shannon distance
-### By priorty:
-- Switch back to one cycle lr
+            - Use hybrid model
 
+### By priorty:
+- add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
+- add gravity direction
+- Use different branches for each thm/tof (we can probably use groups in the alexnets intead of using multiple alex nets)
+- Switch back to one cycle lr
 
 <!-- - Move diff computing in model to reduce VRAM usage -->
 <!--            -  speed up training by parallelizing folds training -->
