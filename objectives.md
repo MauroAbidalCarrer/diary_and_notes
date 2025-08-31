@@ -34,9 +34,6 @@ Tasks:
         - model:
             - Use different branches for each thm/tof (we can probably use groups in the alexnets intead of using multiple alex nets)
         - preprocessing:
-            - add gravity direction
-            - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
-            - Use demographics in preprocessing?
         - training:
             -  Switch back to one cycle lr scheduler
             -  Equalize target distribution through data augmentation
@@ -48,11 +45,11 @@ Tasks:
             - Use hybrid model
 
 ### By priorty:
-- add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors)
-- add gravity direction
-- Use different branches for each thm/tof (we can probably use groups in the alexnets intead of using multiple alex nets)
 - Switch back to one cycle lr
 
+
+<!-- - add gravity direction -->
+<!-- - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors) -->
 <!-- - Move diff computing in model to reduce VRAM usage -->
 <!--            -  speed up training by parallelizing folds training -->
 <!--            -  meta data/performance EDA -->
