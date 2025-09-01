@@ -42,9 +42,14 @@ Tasks:
       - meta:
             -  use with top public score notebook  
             -  read top public score notebook to try and recreate the weight search process.
-            - Search for other preprocessing steps.
+            -  Search for other preprocessing steps.
 
 ### By priorty:
+- thm branch groups
+- merge with best lb score notebook
+- more folds?
+- more preprocessing
+- equalize target distribution
 
 
 <!-- - Use different branches for each tof sensor (we can probably use groups in the alexnets intead of using multiple alex nets) -->
