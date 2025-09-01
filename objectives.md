@@ -40,8 +40,9 @@ Tasks:
             -  Use free adversarial training?
             -  Use EMA of model
       - meta:
-            -  use with top public score notebook
+            -  use with top public score notebook  
             -  read top public score notebook to try and recreate the weight search process.
+            - Search for other preprocessing steps.
 
 ### By priorty:
 
