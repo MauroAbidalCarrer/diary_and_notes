@@ -39,6 +39,7 @@ Tasks:
             -  Equalize target distribution through data augmentation
             -  Use free adversarial training?
             -  Use EMA of model
+            -  Focal Loss
       - meta:
             -  use with top public score notebook  
             -  read top public score notebook to try and recreate the weight search process.
@@ -46,14 +47,20 @@ Tasks:
 
 ### By priorty:
 - thm branch groups
-- windowed cross axis energy
+- more_cross_axis_features
+- windowed cross axis energy ?
 - merge with best lb score notebook
 - more folds?
-- more preprocessing
 - equalize target distribution + freeAT
 - bigger hp search space
 - preds with noise
 
+### Submission:
+- thm groups + more_cross_axis_features
+- merge with best lb score notebook
+- equalize target distribution
+- freeAT
+- preds with noise + more_folds
 
 <!-- - Use different branches for each tof sensor (we can probably use groups in the alexnets intead of using multiple alex nets) -->
 <!-- - add gravity direction -->
