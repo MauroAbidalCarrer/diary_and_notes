@@ -49,7 +49,7 @@ Tasks:
 - merge with best lb score notebook
 - more folds?
 - more preprocessing
-- equalize target distribution
+- equalize target distribution + freeAT
 
 
 <!-- - Use different branches for each tof sensor (we can probably use groups in the alexnets intead of using multiple alex nets) -->
