@@ -50,6 +50,7 @@ Tasks:
 - more folds?
 - more preprocessing
 - equalize target distribution + freeAT
+- bigger hp search space
 
 
 <!-- - Use different branches for each tof sensor (we can probably use groups in the alexnets intead of using multiple alex nets) -->
