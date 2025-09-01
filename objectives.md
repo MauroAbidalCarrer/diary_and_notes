@@ -52,6 +52,7 @@ Tasks:
 - more preprocessing
 - equalize target distribution + freeAT
 - bigger hp search space
+- preds with noise
 
 
 <!-- - Use different branches for each tof sensor (we can probably use groups in the alexnets intead of using multiple alex nets) -->
