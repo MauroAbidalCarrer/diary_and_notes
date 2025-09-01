@@ -46,6 +46,7 @@ Tasks:
 
 ### By priorty:
 - thm branch groups
+- windowed cross axis energy
 - merge with best lb score notebook
 - more folds?
 - more preprocessing
