@@ -54,6 +54,7 @@ Tasks:
 - equalize target distribution + freeAT
 - bigger hp search space
 - preds with noise
+- llkh0a v3 model
 
 ### Submission:
 - thm groups + more_cross_axis_features
