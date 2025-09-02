@@ -32,7 +32,6 @@ Tasks:
 - kaggle
     - Child Mind Institute 2025 competition
         - model:
-            - Use different branches for each thm sensor (we can probably use groups in the alexnets intead of using multiple alex nets).
         - preprocessing:
         - training:
             -  Switch back to one cycle lr scheduler
@@ -57,12 +56,15 @@ Tasks:
 - llkh0a v3 model
 
 ### Submission:
-- thm groups + more_cross_axis_features
 - merge with best lb score notebook
+-  Use EMA of model
+-  Focal Loss
 - equalize target distribution
 - freeAT
 - preds with noise + more_folds
 
+<!-- llkh0a solution -->
+<!-- - thm groups + more_cross_axis_features -->
 <!-- - Use different branches for each tof sensor (we can probably use groups in the alexnets intead of using multiple alex nets) -->
 <!-- - add gravity direction -->
 <!-- - add cross axis energy see this [notebook](https://www.kaggle.com/code/wasupandceacar/lb-0-841-5fold-single-model-with-split-sensors) -->
