@@ -51,12 +51,11 @@ Tasks:
 -   mixup ratio #
   + dropouts in head #
   + Focal Loss 
-  + more cross axis energy
-  + windowed cross axis energy
+  + more cross axis energy ?
   + more_folds
   + EMA of model
   + hp search space:
-    - dropout and gaussian noise,
+    - dropout and gaussian noise
     - mixup alpha and ratio
     - focal loss
     - ema params
