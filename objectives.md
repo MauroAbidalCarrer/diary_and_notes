@@ -44,24 +44,22 @@ Tasks:
             -  read top public score notebook to try and recreate the weight search process.
             -  Search for other preprocessing steps.
 
-### By priorty:
-- thm branch groups
-- more_cross_axis_features
-- windowed cross axis energy ?
-- merge with best lb score notebook
-- more folds?
-- equalize target distribution + freeAT
-- bigger hp search space
-- preds with noise
-- llkh0a v3 model
 
 ### Submission:
 - merge with best lb score notebook
--  Use EMA of model
--  Focal Loss
-- equalize target distribution
-- freeAT
-- preds with noise + more_folds
+- preds with noise
+-   mixup ratio #
+  + dropouts in head #
+  + Focal Loss 
+  + more cross axis energy
+  + windowed cross axis energy
+  + more_folds
+  + EMA of model
+  + hp search space:
+    - dropout and gaussian noise,
+    - mixup alpha and ratio
+    - focal loss
+    - ema params
 
 <!-- llkh0a solution -->
 <!-- - thm groups + more_cross_axis_features -->
