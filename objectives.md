@@ -29,36 +29,38 @@ Tasks:
     - chess?
     - sc2?
 - huggin face's lerobot?
+    - Plastic dismentaling?
 - kaggle
-    - Child Mind Institute 2025 competition
-        - model:
-        - preprocessing:
-        - training:
-            -  Switch back to one cycle lr scheduler
-            -  Equalize target distribution through data augmentation
-            -  Use free adversarial training?
-            -  Use EMA of model
-            -  Focal Loss
-      - meta:
-            -  use with top public score notebook  
-            -  read top public score notebook to try and recreate the weight search process.
-            -  Search for other preprocessing steps.
+    - Child Mind Institute 2025 competition (done, 148th out of 2657 participants, bronze medal)
 
-
-### Submission:
-- merge with best lb score notebook
-- preds with noise
--   mixup ratio #
-  + dropouts in head #
-  + Focal Loss 
-  + more cross axis energy ?
-  + more_folds
-  + EMA of model
-  + hp search space:
-    - dropout and gaussian noise
-    - mixup alpha and ratio
-    - focal loss
-    - ema params
+<!--        - model: -->
+<!--        - preprocessing: -->
+<!--        - training: -->
+<!--            -  Switch back to one cycle lr scheduler -->
+<!--            -  Equalize target distribution through data augmentation -->
+<!--            -  Use free adversarial training? -->
+<!--            -  Use EMA of model -->
+<!--            -  Focal Loss -->
+<!--      - meta: -->
+<!--            -  use with top public score notebook   -->
+<!--            -  read top public score notebook to try and recreate the weight search process. -->
+<!--            -  Search for other preprocessing steps. -->
+<!-- -->
+<!-- -->
+<!--### Submission: -->
+<!--- merge with best lb score notebook -->
+<!--- preds with noise -->
+<!---   mixup ratio # -->
+<!--  + dropouts in head # -->
+<!--  + Focal Loss  -->
+<!--  + more cross axis energy ? -->
+<!--  + more_folds -->
+<!--  + EMA of model -->
+<!--  + hp search space: -->
+<!--    - dropout and gaussian noise -->
+<!--    - mixup alpha and ratio -->
+<!--    - focal loss -->
+<!--    - ema params -->
 
 <!-- llkh0a solution -->
 <!-- - thm groups + more_cross_axis_features -->
