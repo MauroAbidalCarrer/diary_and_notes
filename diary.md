@@ -1051,6 +1051,16 @@
 	This has turned out to cause a lot of problems as I had to use more expensive instances in vast and can't run the training code on kaggle.  
 
 
+04/09/2025:
+-	I dind't write any logs because I was so focused on the [competition](https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data/overview).  
+	I ended up 146th out of 2650 participants which granted me a bronze medal.
+	Unfortunatly I couldn't find someone to team up with, otherwise I think *we* would have got a silver medal/top 100 place.
+-	I wrote a bunch comments on the progress on the merge commits of the [repo](https://github.com/MauroAbidalCarrer/CMI-2025-competition).
+	KTs:
+	-	If I do another competition I will try harder someone to do it with.
+ 	-	Looking at the top solutions writeups I discovered that I had a right intuition on using auxiliary tasks.  
+    	Unfortunatly I didn't have time to use the "behavior" auxiliary target because it would have required sequence wise predictions.  
+	To finish, I'm too lazy to finish the log rn :).
 
 
 
@@ -1063,4 +1073,14 @@
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
