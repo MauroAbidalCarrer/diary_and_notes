@@ -4,9 +4,8 @@ Goodfire fellow research:
   -  Experience with LLM and/or AI interpretability research
   -  Track record of completing structured research projects end-to-end
   -  Demonstrate strong interest in AI interpretability
-
-
-astera/Thomas Teisberg:
+  -  
+Astera/Thomas Teisberg:
   -  2+ years of experience as a software engineer, data scientist, or in a similar role
   -  Experience building interactive web-based data visualizations for complex data
   -  Experience with building portable, reproducible data processing  workflows
@@ -18,7 +17,7 @@ astera/Thomas Teisberg:
   -  Experience working with large-scale computational models and/or remote sensing datasets
   -  Experience translating scientific work for general audiences
 
-anthropic interpretability engineer:
+Anthropic interpretability engineer:
   -  Have 5-10+ years of experience building software
   -  Designing a code base so that anyone can quickly code experiments, launch them, and analyze their results without hitting bugs
   -  Collaborating closely with researchers
@@ -29,6 +28,11 @@ anthropic interpretability engineer:
   -  Creating an interactive visualization of attention between tokens in a language model
   -  We require at least a Bachelor's degree in a related field or equivalent experience.
 
+Anthropic fellow researcher:
+  -  Outstanding performance in computer science, machine learning, or related technical fields (e.g., education from a top program, competition awards)  
+  -  Significant open-source contributions or impactful technical projects.
+  -  Previous research experience, e.g. in machine learning, large language models, AI safety, or adjacent areas
+
 ML intern Neuralink:
   -  Evidence in delivering high-impact projects either in academia or industry
   -  Prior experience designing and building Machine Learning models
@@ -36,7 +40,6 @@ ML intern Neuralink:
   -  Experience in analyzing complex datasets, driving insights, and communicating results in a simple and clear way to both technical and non-technical stakeholders
   -  Excellent communication and collaboration skills
   -  Strong coding skills, with a focus on clean, efficient, and scalable code development
-
 
 Princeton university, laboratory of artificial intelligence - Research Software Engineer:
   - Bachelor’s degree or equivalent in Computer Science, Engineering, Applied Math, Sciences, or related computational field.
