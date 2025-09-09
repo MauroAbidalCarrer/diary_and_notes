@@ -1,21 +1,17 @@
+LASR labs:
+  -  Machine learning engineering experience and strong quantitative skills.
+  -  Willingness to experiment, iterate, and dive into execution under uncertainty.  
+     An ability to develop a theory of change for a project focussed on impact.
+  -  An ability to clearly articulate the outcomes and implications of experiments, coupled with transparent reasoning.
+  -  Experienced working with LLMs
+  -  Completed or in the process of a PhD in a relevant field like Computer Science, Physics, Maths, etc.
+
 Goodfire fellow research:
   -  Previous machine learning research experience
   -  Strong preference for candidates who are available to begin full-time immediately following the fellowship
   -  Experience with LLM and/or AI interpretability research
   -  Track record of completing structured research projects end-to-end
   -  Demonstrate strong interest in AI interpretability
-  -  
-Astera/Thomas Teisberg:
-  -  2+ years of experience as a software engineer, data scientist, or in a similar role
-  -  Experience building interactive web-based data visualizations for complex data
-  -  Experience with building portable, reproducible data processing  workflows
-  -  A deep interest in better understanding our planet’s natural systems
-  -  PhD in computer science, engineering, statistics, or earth sciences
-  -  PhD in computer science, engineering, statistics, or earth sciences
-  -  A background in statistics or experience building Bayesian models
-  -  Experience working with high-performance computing, either with on-premises clusters or in the cloud
-  -  Experience working with large-scale computational models and/or remote sensing datasets
-  -  Experience translating scientific work for general audiences
 
 Anthropic interpretability engineer:
   -  Have 5-10+ years of experience building software
