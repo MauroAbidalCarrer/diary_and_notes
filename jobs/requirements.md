@@ -12,6 +12,10 @@ Goodfire fellow research:
   -  Experience with LLM and/or AI interpretability research
   -  Track record of completing structured research projects end-to-end
   -  Demonstrate strong interest in AI interpretability
+  -  Excel at executing well-defined research plans
+  -  Thrive in collaborative environments
+  -  Can work independently while incorporating structured feedback
+
 
 Anthropic interpretability engineer:
   -  Have 5-10+ years of experience building software
