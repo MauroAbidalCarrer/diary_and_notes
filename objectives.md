@@ -34,8 +34,12 @@ Tasks:
     - Child Mind Institute 2025 competition (done, 148th out of 2657 participants, bronze medal, finished in 2nd of September)
 - Open source contribution  
   *This should allow me to validate the "open source contribution", "worked with LLMs"(if I do something with them ofc), "done some interpretability work".*  
-    - Contribute to Timeaus devinterp repo
-    - contribute to Timeaus projects
+    - Work on Timaeus stuff
+          - Read Singular Learning Theory (SLT)
+        - Read Local learning Coefficient
+        - Go through the introduction notebooks
+        - contribute to Timeaus projects
+        - contribute to Timeaus devinterp repo
 
 ### Get a job!!
 - Send CV to goodfire for fellow ship position
