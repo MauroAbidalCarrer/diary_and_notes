@@ -37,6 +37,11 @@ Tasks:
     - Contribute to Timeaus devinterp repo
     - contribute to Timeaus projects
 
+### Get a job!!
+- Send CV to goodfire for fellow ship position
+- Send CV to timaeus for engineering positio (even though it will be closed by then).
+- Send CV to MATS Program
+
 <!--        - model: -->
 <!--        - preprocessing: -->
 <!--        - training: -->
