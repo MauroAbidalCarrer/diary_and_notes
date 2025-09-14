@@ -31,7 +31,11 @@ Tasks:
 - huggin face's lerobot?
     - Plastic dismentaling?
 - kaggle
-    - Child Mind Institute 2025 competition (done, 148th out of 2657 participants, bronze medal)
+    - Child Mind Institute 2025 competition (done, 148th out of 2657 participants, bronze medal, finished in 2nd of September)
+- Open source contribution
+  *This should allow me to validate the "open source contribution", "worked with LLMs"(if I do something with them ofc), "done some interpretability work".*  
+    - Contribute to Timeaus devinterp repo
+    - contribute to Timeaus projects
 
 <!--        - model: -->
 <!--        - preprocessing: -->
