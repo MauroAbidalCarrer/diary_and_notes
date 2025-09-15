@@ -16,6 +16,12 @@ Goodfire fellow research:
   -  Thrive in collaborative environments
   -  Can work independently while incorporating structured feedback
 
+RainPath:
+- Hands-on experience with GANs or transformers
+- Knowledge of medical imaging or histopathology
+- Familiarity with MLOps tools (W&B, DVC, Docker…)
+- Exposure to spectral data or multi-channel imaging
+- Interest in healthcare and ethical, responsible AI
 
 Anthropic interpretability engineer:
   -  Have 5-10+ years of experience building software
