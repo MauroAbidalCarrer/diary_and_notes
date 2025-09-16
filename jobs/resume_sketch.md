@@ -16,7 +16,8 @@
 
 - **BIB Batteries – Data Science Intern (1 year)**  
     - Predicted **State of Health (SoH)** of EV batteries using real-world fleet data (+14k vehicles, mostly Teslas).  
-    - Learned to write clear and reproducible notebooks.  
+    - Learned to write clear and reproducible notebooks.
+    - Worked in a startup fast paced environment where I learned to deal with quickly changing goals and deadlines.
     - Designed, delivered to **production**, and maintained a **medallion architecture ETL+ML pipeline**:  
         - Converted raw per-manufacturer JSON to Parquet files.  
         - Preprocessed vehicle time-series (charging states, speed, current properties, temperature, etc.).  
