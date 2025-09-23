@@ -30,10 +30,11 @@
             - Resale value predictions  
     - Stored intermediate data as Parquet files in an **S3 bucket** and business insights into a **PostgreSQL** database.  
 
-- **Personal Learning**  
+- **Personal Projects**  
     - Implemented more CV concepts (ResNet, FreeAT augmentations) using PyTorch.  
     - Built a toy CNN library from scratch using NumPy.  
-    - Completed *Neural Networks from Scratch* book for fundamentals in deep learning.  
+    - Completed *Neural Networks from Scratch* book for fundamentals in deep learning.
+    - Contributed to open source project [local code interpreter](https://github.com/MrGreyfun/Local-Code-Interpreter)
 
 - **Freelance Unity Game Developer (6 months)**  
     - Delivered small game projects for clients.  
