@@ -3,3 +3,4 @@
 - Use adv attacks as probes to compute local complexity.  
 - Link adv attacks, local complexity and loss sharpness.  
 - Use loss (first and/or 2nd order)gradients amplitude as a regularization loss and maybe learning rate scheduling.  
+- use loss magnitude as a loss in itself for regularization.
