@@ -1,9 +1,14 @@
 ### Skills:
   - Programming languages: Python, C, C#  
-  - Programming Frameworks: PyTorch, Pandas, NumPy, Plotly, Optuna, scikit-learn  
+  - Programming Frameworks: PyTorch, Pandas, NumPy, Plotly, Optuna, Weights and Biases
   - Spoken Languages: English, French, Italian  
 
 ### Experience and projects:
+
+- **GPT-2 scale LLM implementation through Andrej Karpathy's tutorial**
+    - Implemented a 124M parameters LLM.
+    - Scaled LLM training using **multi-GPU parallelization** of 4xH100s.
+    - Tracked the experiment trough **Weights and Biases**.
 
 - **Child-Mind-Institute-2025 Kaggle Competition**  
     - Reached **146th place out of 2600** participants with an **0.83 F1 score** as a **solo competitor**.  
