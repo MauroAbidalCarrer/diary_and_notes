@@ -44,7 +44,7 @@
       This in part enabled me to outperform the best public notebook before the end of the competition with a 0.81 F1 score.  
     - [link to competition](https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data/overview)
 
-- **Personal Projects**  
+- **Small Projects**  
     - Implemented more CV concepts (ResNet, FreeAT augmentations) using PyTorch.  
     - Built a toy CNN library from scratch using NumPy.  
     - Completed *Neural Networks from Scratch* book to learn the fundamentals of deep learning.
