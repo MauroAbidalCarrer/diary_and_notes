@@ -3,23 +3,9 @@
   - Programming Frameworks: PyTorch, Pandas, NumPy, Plotly, Optuna, Weights and Biases
   - Spoken Languages: English, French, Italian  
 
-### Experience and projects:
+### Work Experience:
 
-- **GPT-2 scale LLM implementation through Andrej Karpathy's tutorial**
-    - Implemented a 124M parameters LLM.
-    - Scaled LLM training using **multi-GPU parallelization** of 4xH100s.
-    - Tracked the experiment trough **Weights and Biases**.
-
-- **Child-Mind-Institute-2025 Kaggle Competition**  
-    - Reached **146th place out of 2600** participants with an **0.83 F1 score** as a **solo competitor**.  
-    - Data preprocessing using Pandas, NumPy and scikit-learn.  
-    - Cross-validation training parallelized over multiple GPUs using PyTorch's multiprocessing module.  
-      The parallelization enabled scaling/speedup up to 10x.  
-    - Hyperparameter tuning using **Optuna** and the aforementioned training solution.  
-    - **Independently researched Multi-Task Learning** and implemented it to better leverage the dataset.  
-    - This in part enabled me to outperform the best public notebook of the competition with a 0.81 F1 score.  
-
-- **BIB Batteries – Data Science Intern (1 year)**  
+- **BIB Batteries – Data Science Intern (March 2024 - March 2025)**  
     - Predicted **State of Health (SoH)** of EV batteries using real-world fleet data (+14k vehicles, mostly Teslas).  
     - Learned to write clear and reproducible notebooks.
     - Worked in a startup fast paced environment where I learned to deal with quickly changing goals and deadlines.
@@ -33,26 +19,47 @@
             - SoH degradation per mileage per model  
             - Principal influential factors of SoH loss  
             - Resale value predictions  
-    - Stored intermediate data as Parquet files in an **S3 bucket** and business insights into a **PostgreSQL** database.  
+    - Stored intermediate data as Parquet files in an **S3 bucket** and business insights into a **PostgreSQL** database.
+    - [link to bib batteries' website](https://bib-batteries.fr/)
+
+- **Freelance Unity Game Developer (6 months June - November 2023)**  
+    - Delivered small game projects for clients.  
+    - Worked across gameplay programming, prototyping, and asset integration.  
+
+### Personal learning
+
+- **GPT-2 scale LLM implementation through Andrej Karpathy's tutorial**(Started in September 15)
+    - Implemented a 124M parameters LLM.
+    - Scaled LLM training using **multi-GPU parallelization** of 4xH100s.
+    - Tracked the experiment trough **Weights and Biases**.
+    - Currently studying how to implement a Self Auto Encoder to interpret the LLM.
+
+- **Child-Mind-Institute-2025 Kaggle Competition (July and August 2025)**  
+    - Reached **146th place out of 2600** participants with a **0.83 F1 score** as a **solo competitor**.  
+    - Data preprocessing using Pandas, NumPy and scikit-learn.  
+    - Cross-validation training parallelized over multiple GPUs using PyTorch's multiprocessing module.  
+      The parallelization enabled scaling/speedup up to 10x.  
+    - Hyperparameter tuning using **Optuna** and the aforementioned training solution.  
+    - **Independently researched and implemented Multi-Task Learning** to perform more data efficient training.    
+      This in part enabled me to outperform the best public notebook before the end of the competition with a 0.81 F1 score.  
+    - [link to competition](https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data/overview)
 
 - **Personal Projects**  
     - Implemented more CV concepts (ResNet, FreeAT augmentations) using PyTorch.  
     - Built a toy CNN library from scratch using NumPy.  
-    - Completed *Neural Networks from Scratch* book for fundamentals in deep learning.
-    - Contributed to open source project [local code interpreter](https://github.com/MrGreyfun/Local-Code-Interpreter)
+    - Completed *Neural Networks from Scratch* book to learn the fundamentals of deep learning.
+    - Contributed to open source project [local code interpreter](https://github.com/MrGreyfun/Local-Code-Interpreter) to serliaze the conversation of user and a coding assistant into a notebook to help reprocduce experiments.
 
-- **Freelance Unity Game Developer (6 months)**  
-    - Delivered small game projects for clients.  
-    - Worked across gameplay programming, prototyping, and asset integration.  
+### Education:
 
-- **School 42 – Data Science Branch**  
+- **School 42 – Data Science Branch (ocotobr 2023)**  
     - Motor imagery classification task from (EEG) recordings (i.e., recognizing movements from brain waves).  
         - Used MNE library to preprocess data, apply bandpass filtering, and segment experiments.  
         - Learned the statistical concepts behind dimensionality reduction algorithm **Common Spatial Pattern (CSP)**.  
         - Implemented a cross-validation training pipeline.  
         - Modified the pipeline to perform **real-time inference**.  
 
-- **School 42 – Main Cursus**  
+- **School 42 – Main Cursus(2022 - 07/2023)**  
     - Learned low-level software engineering concepts through a project-based program.  
       Note: Not all the projects are mentioned here.  
         - **Won VivaTech game jam**, with project showcased at VivaTech.  
