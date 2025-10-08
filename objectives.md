@@ -32,15 +32,26 @@ Tasks:
     - Plastic dismentaling?
 - kaggle
     - Child Mind Institute 2025 competition (done, 148th out of 2657 participants, bronze medal, finished in 2nd of September)
+
+### Andrej Karpathy's GPT2 tutorial (16 September - 7 October)
+- Learn how to get the most out of the GPUs, what's the best GPU for the task.
+- Learned how transformers and their tokenizers work.
+- waisted a week on dum typos "hidden" in the model definition.
+- Learned about Distributed Data Parralle pytorch package.
+- Learned a bit more about W&B.
+
+Applied to MATS fellowship the 2nd of October
+
+Apply to LASR and astra fellowships.
+- Clean the transformers and CMI repos
+- Clean the transformer W&B workspace
+- Make the transformer beat GPT-3 in Hellaswag eval?
+- Fix transformer data loader?
+- Update the webpage?
+  
 - Open source contribution  
   *This should allow me to validate the "open source contribution", "worked with LLMs"(if I do something with them ofc), "done some interpretability work".*
   
-    - Work on Timaeus stuff
-          - Read Singular Learning Theory (SLT)
-        - Read Local learning Coefficient
-        - Go through the introduction notebooks
-        - contribute to Timeaus projects
-        - contribute to Timeaus devinterp repo
 
 ### Get a job!!
 - Send CV to goodfire for fellow ship position
