@@ -54,9 +54,12 @@ Apply to LASR and astra fellowships.
   
 
 ### Get a job!!
+- Relancer MATS
+- demander a Martin about Lixo
+- Send spontanous participation to Doctolib
 - Send CV to goodfire for fellow ship position
 - Send CV to timaeus for engineering positio (even though it will be closed by then).
-- Send CV to MATS Program
+- Send CV to MATS Program (done)
 
 <!--        - model: -->
 <!--        - preprocessing: -->
