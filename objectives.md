@@ -54,12 +54,35 @@ Apply to LASR and astra fellowships.
   
 
 ### Get a job!!
-- Relancer MATS
-- demander a Martin about Lixo
-- Send spontanous participation to Doctolib
-- Send CV to goodfire for fellow ship position
-- Send CV to timaeus for engineering positio (even though it will be closed by then).
+- Relancer MATS(send)
+- demander a Martin about Lixo(send)
+- Send spontanous participation to Doctolib(send)
 - Send CV to MATS Program (done)
+- Send CV to goodfire for fellow ship position
+    - Implement SAE
+        - SAE on uncensored LLM + steer llm to safety
+            - Create dataset of activations on harmfull questino/answers
+                - input/output tokens, residual streams activations, question category
+            - Train SAE
+                - p annealing ?
+            - Eval SAE
+                - calssify question/answer category with linear+softmax
+                - l0 loss eval
+                - eval LLM with reconstructed residual activations
+                    - eval LLM performance
+                        - Hella swag like eval
+                        - sample random question/answers
+                    - eval LLM harmfullness
+                        - Hella swag like eval
+                        - sample random question/answers
+            - Steer LLM
+                - Generate safe answers to harmfull questions
+                - Found harnful/compliant answers SAE features
+                - Found safe/non compliant answers SAE features
+                - Create harmfull loss: SAE activations @ harmfull vector - SAE activation -> SAE activations @ (harmfull vec - safe vector)
+                - back prop loss to residual activation
+                - eval again
+                - that's "it"?
 
 <!--        - model: -->
 <!--        - preprocessing: -->
