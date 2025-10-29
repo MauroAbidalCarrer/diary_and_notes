@@ -75,6 +75,10 @@ Apply to LASR and astra fellowships.
                     - eval LLM harmfullness
                         - Hella swag like eval
                         - sample random question/answers
+            - Use openAI architecture:
+                - Use topK + ReLu 
+                - Use layer norm at the begining and rescale with same parameters at the end
+                - tie the encoder and decoder weights
             - Steer LLM
                 - Generate safe answers to harmfull questions
                 - Found harnful/compliant answers SAE features
